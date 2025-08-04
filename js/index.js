@@ -24,25 +24,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   new Splide(".splideTestimonials", {
     type: "loop",
-    perPage: 1,
+    perPage: 3,
     drag: "free",
     snap: true,
     focus: "center",
     isLoop: true,
     gap: "20px",
-    padding: {
-      left: "20%",
-      right: "35%",
-    },
+    padding: 0,
+    arrows: true,
     pagination: true,
     breakpoints: {
       1024: {
-        perPage: 1,
+        perPage: 3,
         arrows: true,
+        padding: 0,
+        focus: "center",
       },
       768: {
         perPage: 1,
         arrows: true,
+        focus: "center",
+        padding: {
+          left: "25%",
+          right: "25%",
+        },
       },
       640: {
         perPage: 1,
